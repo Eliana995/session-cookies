@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 16px 'Consolas', Helvetica, Arial, sans-serif;
+}
+
+/* FONDOS P/BODY GENERALES QUE SE GUARDAN EN SESSION/COOKIES */
+
+.naranja{
+  background-color: rgba(255, 166, 0, 0.411);
+}
+.azul{
+  background-color: rgba(0, 174, 255, 0.281);
+}
+.violeta{
+  background-color: rgba(238, 130, 238, 0.425);
+}
+
+/*HEADER*/
+.header {
+  background-color: #de3a3177;
+  margin-bottom: 10%;
+  font-size: 18px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 0 10px;
+  padding-inline-start: 0;
+}
+
+.a-logo {
+  align-self: center;
+}
+.logo {
+  width: 12vh;
+  border-radius: 20%;
+  margin-right: 8px;
+}
+
+li {
+  list-style: none;
+  margin-right: 8px;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.877);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+i:hover{
+  color: #fff;
+}
+.dcha {
+  display: flex;
+  align-items: center;
+}
+.costado {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*MAIN*/
+
+main{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+h1,
+h4 {
+  margin: 3%;
+}
+
+/* {Animación escritura en vivo para titulos */
+.titulo-saludo{
+  position: relative;
+      top: 50%;
+      width: 16em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      font-size: 180%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;transform: translateY(-50%);
+}
+
+.animacion-escritura{
+  animation: escritura 4s steps(36) 1s 1 normal both,
+      cursor 500ms steps(36) infinite normal;
+}
+
+@keyframes escritura {
+      from {
+            width: 0;
+      }
+      to {
+            width: 16em;
+      }
+}
+
+@keyframes cursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+
+.card-group {
+  margin: 3%;
+}
+
+h5 {
+  text-decoration: underline;
+}
+
+/*FORMULARIO DE REGISTRO*/
+
+.form-block{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+
+input{
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+input,select{
+  font-size: initial;
+  outline: none; /*Saca el borde cuando es seleccionado*/
+}
+.input-select{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+input:focus{
+  border-bottom: solid 2px #de3a3177;
+}
+
+select:focus{
+  border: solid 2px #de3a3177;
+}
+
+button{
+  border: solid 2px #de3a3177;
+  color: #de3a3177;
+  background-color: transparent;
+  font-weight:bold;
+}
+
+button:hover{
+  background-color: #de3a3177;
+  color: #fff;
+}
+
+/* Hoja formulario de registro */
+.registro{
+  color: #de3a3177;
+  background-color: transparent;
+  font-weight:bold;
+}
+
+.registro:hover{
+  background-color: #de3a3177;
+  color: #fff;
+}
+
+.input-group{
+  justify-content: space-evenly;
+}
+
+/* //botón switch */
+.switch:checked{
+background-color: #de3a3177;
+border: 2px solid #de3a3177;
+}
+
+
+/*FOOTER*/
+footer {
+  background-color: rgb(230, 229, 229);
+  margin-top: 10%;
+}
+
+/*RESPONSIVE*/
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+  .costado {
+    font-size: 20px;
+  }
+}
